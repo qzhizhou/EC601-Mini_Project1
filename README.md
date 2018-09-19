@@ -38,8 +38,8 @@ Go to your current directory and view all the images. Labels now are printed on 
   
 ## 3. Use FFMPEG to Convert Images into Viseos:  
   
-	install brew ffmpeg
-	ffmpeg -loop 1 -y -i %d.jpg -i WE-WILL-ROCK-YOU.mp3 -r 1 -t 18 -absf aac_adtstoasc output.mp4  
+	1.install brew ffmpeg
+	2.ffmpeg -loop 1 -y -i %d.jpg -i WE-WILL-ROCK-YOU.mp3 -r 1 -t 18 -absf aac_adtstoasc output.mp4  
 
 
 
