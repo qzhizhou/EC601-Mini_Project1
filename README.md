@@ -9,14 +9,32 @@ It is to build a library (in python) that downloads images from a twitter feed, 
 Go to https://developer.twitter.com/content/developer-twitter/en.html and apply for a Twitter developer account. Once you haved finished, you will recieve the keys and tokens. Mark them down and keep them safe! 
 
 ### 1.2 Install Tweepy:  
+
 Installing Tweepy is pretty easy:  
 
 	pip install tweepy  
   
-### 1.3 Run the Tweepy-images.py  
-Once you have got all the credential files in the directory where you clone this git, you now can try to download images from Twitter:
+### 1.3 Run the Tweepy-images.py:  
+Once you have got all the credential files in the directory where you download this git, you now can try to download images from Twitter:  
+
 		python Tweepy-images.py  
-But before you run, please open the Tweepy-images.py file, and input you keys and tokens. In line 24, you will need to input the Twitter account you want to access.
+		
+But before you run, please open the Tweepy-images.py file, and input you keys and tokens.  
+In line 24, you will need to input the Twitter account you want to access, and also you can change the limit number of images by changin the number after "cout="
+  
+## 2.Use Google Vision to analyze Images:  
+  
+  ### 2.1 Set up the Google Vision environment:  
+  Go to https://cloud.google.com/vision/docs/quickstart-client-libraries and follow the instructions.  
+   Please make sure that the path and the credenstial files are all located in your current directory!  
+      
+  ### 2.2 Run the google_vision.py:  
+  In line 17, please change the path your current directory.  
+  And now you can run:  
+    
+	python google_vision.py  
+	  
+Go to your current directory and 
 
 
 
