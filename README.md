@@ -36,27 +36,19 @@ In line 24, you will need to input the Twitter account you want to access, and a
 	  
 Go to your current directory and view all the images. Labels now are printed on images.  
   
-## 3. Use FFMPEG to Convert Images into Viseos:  
+## 3. Use FFMPEG to Convert Images into Videos:  
   
 	1>> install brew ffmpeg
-	2>> ffmpeg -loop 1 -y -i %d.jpg -i WE-WILL-ROCK-YOU.mp3 -r 1 -t 18 -absf aac_adtstoasc output.mp4  
+	2>> ffmpeg -loop 1 -y -i %d.jpg -i WE-WILL-ROCK-YOU.mp3 -r 1 -t 18 -absf aac_adtstoasc output.mp4   
+	
+Please enjoy the output.mp4!  
+  
+ ## 4. Run the Tweepy_GoogleVersion.py:
+ The Tweepy_GoogleVersion.py file is a combination of the .py files above.  
+ Before you run this python program, please redo the PATH steps mentioned above.   
+   
+    python Tweepy_GoogleVersion.py  
+    
+Once you successfully run the program, you gain the accesss to every valid Twitter account to download the images they uploaded and analyze what the pics are about and view them in an awesome video!
 
 
-
-
-
-
-
-
-
-
-
-
-Twitter API, FFMPEG, Google Vision Analysis
-
-It is to build a library (in python) that downloads images from a twitter feed, convert them to a video and describe the   content of the images in the video.
-
-Mainly Use:
- Twitter API to access the twitter content
- FFMPEG to convert images to videos
- oogle Vision analysis to describe the content
