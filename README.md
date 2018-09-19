@@ -4,7 +4,6 @@ It is to build a library (in python) that downloads images from a twitter feed, 
 
 ## 1. Use Tweepy to Download Images:
 
-=====
 ### 1.1 Get the Twitter API Credential:
 
 Go to https://developer.twitter.com/content/developer-twitter/en.html and apply for a Twitter developer account. Once you haved finished, you will recieve the keys and tokens. Mark them down and keep them safe! 
