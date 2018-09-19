@@ -10,7 +10,7 @@ Go to https://developer.twitter.com/content/developer-twitter/en.html and apply 
 
 ### 1.2 Install Tweepy:  
 Installing Tweepy is pretty easy:  
-    pip install tweepy
+		pip install tweepy
 
 
 
