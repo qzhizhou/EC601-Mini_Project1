@@ -11,7 +11,12 @@ Go to https://developer.twitter.com/content/developer-twitter/en.html and apply 
 ### 1.2 Install Tweepy:  
 Installing Tweepy is pretty easy:  
 
-	pip install tweepy
+	pip install tweepy  
+  
+### 1.3 Run the Tweepy-images.py  
+Once you have got all the credential files in the directory where you clone this git, you now can try to download images from Twitter:
+		python Tweepy-images.py  
+But before you run, please open the Tweepy-images.py file, and input you keys and tokens. In line 24, you will need to input the Twitter account you want to access.
 
 
 
