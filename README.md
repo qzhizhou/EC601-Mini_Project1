@@ -1,4 +1,4 @@
-# EC601-Mini_Project1- Twitter API & Google Vision
+# EC601-Project1- Twitter API & Google Vision
 
 It is to build a library (in python) that downloads images from a twitter feed, convert them to a video and describe the   content of the images in the video.
 
