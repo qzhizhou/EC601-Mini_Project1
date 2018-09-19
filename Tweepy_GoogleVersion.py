@@ -27,20 +27,22 @@ auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 
-#grab tweets                   #Enter the tweeter account name here
-new_tweets = api.user_timeline(screen_name='gilbert_alfie',
-                           count=200, include_rts=False,
+#grab tweets
+try:                           
+    new_tweets = api.user_timeline(screen_name='gilber', #Enter the tweeter account name here
+                           count=50, include_rts=False,
                            exclude_replies=True)
 
-media_files = set()
-for status in new_tweets:
-    media = status.entities.get('media', [])
-    if(len(media) > 0):
-        media_files.add(media[0]['media_url'])
+    media_files = set()
+    for status in new_tweets:
+        media = status.entities.get('media', [])
+        if(len(media) > 0):
+            media_files.add(media[0]['media_url'])
 
-for media_file in media_files:
-    wget.download(media_file)
-
+    for media_file in media_files:
+        wget.download(media_file)
+except:
+    print("The Twiiter account does not exist!")
 
 # Imports the Google Cloud client library
 from google.cloud import vision
