@@ -17,10 +17,10 @@ Installing Tweepy is pretty easy:
 ### 1.3 Run the Tweepy-images.py:  
 Once you have got all the credential files in the directory where you download this git, you now can try to download images from Twitter:  
 
-		python Tweepy-images.py  
+	python Tweepy-images.py  
 		
 But before you run, please open the Tweepy-images.py file, and input you keys and tokens.  
-In line 24, you will need to input the Twitter account you want to access, and also you can change the limit number of images by changin the number after "cout="
+In line 24, you will need to input the Twitter account you want to access, and also you can change the limit number of images by changing the number after "count="
   
 ## 2.Use Google Vision to analyze Images:  
   
@@ -29,12 +29,19 @@ In line 24, you will need to input the Twitter account you want to access, and a
    Please make sure that the path and the credenstial files are all located in your current directory!  
       
   ### 2.2 Run the google_vision.py:  
-  In line 17, please change the path your current directory.  
+  In line 17, please change the path to your current directory.  
   And now you can run:  
     
 	python google_vision.py  
 	  
-Go to your current directory and 
+Go to your current directory and view all the images. Labels now are printed on images.  
+  
+## 3. Use FFMPEG to Convert Images into Viseos:  
+  
+	install brew ffmpeg
+	ffmpeg -loop 1 -y -i %d.jpg -i WE-WILL-ROCK-YOU.mp3 -r 1 -t 18 -absf aac_adtstoasc output.mp4  
+
+
 
 
 
