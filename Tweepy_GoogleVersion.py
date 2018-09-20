@@ -13,10 +13,10 @@ import subprocess
 
 
 #Twitter API credentials
-consumer_key = 'QaQ8GSINMg5bTr369UPucTpMY'
-consumer_secret = 'kCnzriY19FKwaxWpy2bXZp4VQH5sCp8Fs52AhVQXOALrnfpHk8'
-access_token = '2472164736-OkQ6QO4vmtg6tFZrIxSz75zXqwcm6WQAA7lPuWb'
-access_secret = 'Aj5dgNnx0CrO5eeuqkNmVugJSIKB84qkZ04U4riJJDxzx'
+consumer_key = 'YOUR-CONSUMER-KEY'
+consumer_secret = 'YOUR-CONSUMER-SECRET'
+access_token = 'YOUR-ACCESS-TOKEN'
+access_secret = 'YOUR-ACCESS-SECRET'
 
 def parse(cls, api, raw):
     status = cls.first_parse(api, raw)
