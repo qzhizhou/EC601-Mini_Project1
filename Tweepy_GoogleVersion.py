@@ -41,7 +41,12 @@ try:
             media_files.add(media[0]['media_url'])
 
     for media_file in media_files:
-        wget.download(media_file)
+        if media_file.endswith(".jpg"):
+            wget.download(media_file)
+        else:
+            print("There is no image in this account")
+            break
+
 except:
     print("The Twiiter account does not exist!")
     os._exit(0)
