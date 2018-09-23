@@ -29,7 +29,7 @@ In line 24, you will need to input the Twitter account you want to access, and a
    Please make sure that the path and the credenstial files are all located in your current directory!  
       
   ### 2.2 Run the google_vision.py:  
-  In line 17, please change the path to your current directory.  
+  In line 17 and 69, please change the path to your current directory.  
   And now you can run:  
     
 	python google_vision.py  
