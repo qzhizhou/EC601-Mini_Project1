@@ -2,6 +2,10 @@ import tweepy
 from tweepy import OAuthHandler
 import json
 import wget
+import io
+import os
+import sys
+
 
 #Twitter API credentials
 consumer_key = 'YOUR-CONSUMER-KEY'
@@ -35,3 +39,4 @@ try:
         wget.download(media_file)
 except:
     print("The Twiiter account does not exist!")
+os._exit(0)
