@@ -21,8 +21,8 @@ api = tweepy.API(auth)
 
 #grab tweets
 try:
-    new_tweets = api.user_timeline(screen_name='BBCSport',
-                                   count=10, include_rts=False,
+    new_tweets = api.user_timeline(screen_name='gilbert_alfie',
+                                   count=50, include_rts=False,
                                    exclude_replies=True)
 
     media_files = set()
