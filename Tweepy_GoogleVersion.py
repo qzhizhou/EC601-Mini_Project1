@@ -44,7 +44,7 @@ try:
         wget.download(media_file)
 except:
     print("The Twiiter account does not exist!")
-os._exit(0)
+    os._exit(0)
 
 # Imports the Google Cloud client library
 from google.cloud import vision
