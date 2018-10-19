@@ -25,7 +25,7 @@ api = tweepy.API(auth)
 
 #grab tweets
 try:
-    new_tweets = api.user_timeline(screen_name='BBCSport',
+    new_tweets = api.user_timeline(screen_name='gilbert_alfie',
                                    count=10, include_rts=False,
                                    exclude_replies=True)
 
